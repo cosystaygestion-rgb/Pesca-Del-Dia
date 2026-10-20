@@ -1,0 +1,6 @@
+{
+  "name": "Pesca Del Dia 2 - صيد اليوم | Tanger",
+  "description": "Restaurant de poissons et fruits de mer frais à Tanger sur l'Avenue Oujda. Banc de poissons du jour, fritures croustillantes, grillades à la plancha et paëlla authentique.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

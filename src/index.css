@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    max-width: 100%;
+    width: 100%;
+    overscroll-behavior-x: none;
+  }
+
+  body {
+    overflow-x: hidden;
+    max-width: 100%;
+    width: 100%;
+    position: relative;
+    overscroll-behavior-x: none;
+  }
+
+  #root {
+    overflow-x: hidden;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  button, a, [role="button"] {
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+.font-serif {
+  font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+}
+
+.font-sans {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+}
+
+.font-arabic {
+  font-family: 'Amiri', 'Traditional Arabic', serif;
+}
+
+/* Custom scrollbar for ice counter & menu tabs */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(10, 15, 24, 0.8);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(217, 119, 6, 0.4);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(217, 119, 6, 0.7);
+}
+
+/* Hide scrollbar for smooth horizontal touch swipe on mobile */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Safe area inset for modern mobile displays (iPhone notch / home gesture bar) */
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom, 1rem);
+}
+.bottom-safe {
+  bottom: calc(0.75rem + env(safe-area-inset-bottom, 0px));
+}
+
+/* Maritime subtle textured backgrounds */
+.bg-ocean-deep {
+  background-color: #080d15;
+}
+
+.bg-ocean-surface {
+  background-color: #0f1622;
+}
+
+.bg-ocean-card {
+  background-color: #141e2e;
+}
+
+/* Paper Ticket Sawtooth Edge */
+.receipt-sawtooth {
+  background-image: radial-gradient(circle at 10px 0, transparent 0, transparent 8px, #141e2e 8.5px);
+  background-size: 20px 20px;
+  background-repeat: repeat-x;
+}
+
